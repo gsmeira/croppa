@@ -33,7 +33,7 @@ class Image {
      */
     public function process($width = null, $height = null, $options = []) {
         return $this
-            ->autoRotate()
+            //->autoRotate()
             ->trim($options)
             ->resizeAndOrCrop($width, $height, $options)
             ->applyFilters($options)
